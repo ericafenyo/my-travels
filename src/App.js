@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import logo from './logo.svg';
 import Travel from './Travel';
-
 
 const data = [
   {
@@ -43,13 +43,33 @@ const data = [
 ]
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      working: false
+    }
+  }
+
+  handleClick = () => {
+    this.setState({ working: !this.state.working });
+  }
+
   render() {
     return (
-      <div className="App container">
-        <div className=" travel d-flex flex-wrap justify-content-around mt-4">
-          {data.map((value, index) => <Travel data={value} key={index} />)}
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className={this.state.working? "App-logo logo-go-crazy" : "App-logo"} alt="logo" />
+          <div>
+            <button className="btn btn-outline-light" onClick={this.handleClick}>{this.state.working?"Sloth mode" : "Cheetah mode" }</button>
+          </div>
+        </header>
+        <div className="container">
+          <div className=" travel d-flex flex-wrap justify-content-start mt-4">
+            {data.map((value, index) => <Travel data={value} key={index} />)}
+          </div>
         </div>
-      </div>);
+      </div>
+    );
   }
 }
 
