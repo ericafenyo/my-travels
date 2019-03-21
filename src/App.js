@@ -18,6 +18,28 @@ const data = [
     photo: "https://images.unsplash.com/photo-1504615458222-979e04d69a27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1607&h=1607&q=80",
     distance: "5 836 km"
   },
+
+
+  {
+    destination: "Vienna",
+    country: "Austria",
+    photo: "https://images.unsplash.com/photo-1480413258216-ff003d179d65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1607&h=1607&q=80",
+    distance: "7 076 km"
+  },
+
+  {
+    destination: "Riyadh",
+    country: "Saudi Arabia",
+    photo: "https://images.unsplash.com/photo-1506795213373-430e921fe2ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1607&h=1607&q=80",
+    distance: "9 456 km"
+  },
+
+  {
+    destination: "London",
+    country: "United Kingdom",
+    photo: "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1607&h=1607&q=80",
+    distance: "9 456 km"
+  },
 ]
 
 class App extends Component {
